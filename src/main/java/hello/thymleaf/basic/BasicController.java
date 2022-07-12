@@ -19,6 +19,8 @@ import java.util.Map;
 @RequestMapping("/basic")
 public class BasicController {
 
+    private int test;
+
     @GetMapping("text-basic")
     public String textBasic(Model model){
         model.addAttribute("data", "Hello Spring!");
